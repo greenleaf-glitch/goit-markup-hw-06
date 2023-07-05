@@ -727,6 +727,7 @@
                 name="subscribe-user-email"
                 id="subscribe-user-email"
                 placeholder="E-mail"
+                required
               />
             </label>
             <button
@@ -782,6 +783,9 @@
                 name="user-name"
                 id="user-name"
                 placeholder="Your Name"
+                required
+                minlength="3"
+                pattern="^[a-zA_Zа-яА_ЯіІїЇ]+$"
               />
               <svg
                 class="modal-form-icon"
@@ -808,7 +812,9 @@
                 type="tel"
                 name="user-phone"
                 id="user-phone"
-                placeholder="+380(00)000-00-00"
+                placeholder="+380-00-000-00-00"
+                pattern="^\+?3?8?(0[\s\.-]\d{2}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$"
+                required
               />
               <svg
                 class="modal-form-icon"
@@ -836,6 +842,7 @@
                 name="user-email"
                 id="user-email"
                 placeholder="mail@mail.com"
+                required
               />
               <svg
                 class="modal-form-icon"
@@ -870,6 +877,7 @@
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
+              required
               value="true"
             />
             <label class="checkbox" for="user-privacy">
