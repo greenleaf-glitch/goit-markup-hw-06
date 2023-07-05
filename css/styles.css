@@ -666,8 +666,6 @@ body {
 
 .footer-subscribe-label {
   display: inline-flex;
-  justify-content: flex-start;
-  align-items: center;
   gap: 24px;
 }
 
@@ -681,10 +679,13 @@ body {
   margin-bottom: 16px;
 }
 
-/* .footer-subscribe-form {
-  display: flex;
+.footer-subscribe-form {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* display: flex; */
   gap: 24px;
-} */
+}
 
 .footer-subscribe-form-input {
   width: 264px;
