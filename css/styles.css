@@ -1020,6 +1020,8 @@ font-style: normal;
 }
 
 .checkbox-span {
+  display: inline-flex;
+  gap: 8px;
   width: 16px;
   height: 16px;
   align-items: center;
@@ -1033,20 +1035,15 @@ font-style: normal;
 font-weight: 400; */
   line-height: 14px;
   letter-spacing: 0.48px;
-
+  margin-right: 8px;
   border-radius: 2px;
   transition: background-color var(--trans-time-func),
     border var(--trans-time-func),
     fill var(--trans-time-func);
 }
 
-.span-flex {
-  display: inline-flex;
-}
-
 .checkbox {
-  display: flex;
-  gap: 8px;
+  display: inline-flex;
   width: 360px;
   margin-bottom: 24px;
   align-items: center;
