@@ -849,21 +849,19 @@
             </div>
           </div>
 
-          <div class="modal-form">
+          <div class="modal-form modal-form-comment">
             <label
               class="modal-form-label"
               for="user-comment"
             >
               <span class="modal-list-label">Comment</span>
             </label>
-            <div class="modal-form-container">
-              <textarea
-                name="user-comment"
-                class="modal-list-input-comment"
-                placeholder="Text input"
-                id="user-comment"
-              ></textarea>
-            </div>
+            <textarea
+              name="user-comment"
+              class="modal-list-input-comment"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
           </div>
 
           <div class="modal-checkbox-container">
@@ -874,6 +872,14 @@
               id="user-privacy"
               value="true"
             />
+            <label class="checkbox" for="user-privacy">
+              <span class="privacy-policy-text">
+                I accept the terms and conditions of the
+                <a class="privacy-policy-link" href="#"
+                  >Privacy Policy</a
+                >
+              </span>
+            </label>
             <svg
               class="privacy-policy-checkbox-icon"
               width="16"
@@ -888,14 +894,6 @@
                 href="./images/icons.svg#icon-check-label-full"
               ></use>
             </svg>
-            <label class="checkbox" for="user-privacy">
-              <span class="privacy-policy-text">
-                I accept the terms and conditions of the
-                <a class="privacy-policy-link" href="#"
-                  >Privacy Policy</a
-                >
-              </span>
-            </label>
           </div>
           <button class="modal-submit-button" type="submit">
             <span class="model-submit-button-text"
