@@ -1003,6 +1003,7 @@ font-style: normal;
 }
 
 .modal-form-container {
+  position: relative;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -1055,69 +1056,62 @@ font-weight: 400; */
   transform: translateY(-50%);
   fill: var(--secondary-color);
   pointer-events: none;
+  transition: fill var(--trans-time-func);
 }
 
 .modal-list-input {
   position: relative;
   display: block;
-  width: 360px;
-  /* width: 100%; */
+  width: 100%;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding-left: 38px;
   outline-color: transparent;
   background-color: transparent;
-  transition: color var(--trans-time-func);
-  outline: 0;
+  transition: border-color var(--trans-time-func);
+  outline: transparent;
+  padding-left: 38px;
 }
 
-.modal-form-container {
-  position: relative;
+.modal-form {
+  /* position: relative;
   width: 100%;
   margin: 0;
-  padding: 0;
-  gap: 4px;
+  padding: 0; */
+  /* gap: 4px; */
+  margin-bottom: 8px;
 }
 
 .modal-list-input-comment {
+  width: 100%;
+  height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
-  transition: color var(--trans-time-func);
-  outline: 0;
-}
-
-textarea {
+  transition: border-color var(--trans-time-func);
+  outline: transparent;
   resize: none;
-  /* width: 100%; */
-  width: 360px;
-  height: 120px;
   outline-color: transparent;
   background-color: transparent;
-  outline: 0;
-  padding-left: 16px;
-  margin-bottom: 16px;
-}
-
-.modal-list-label {
-  display: inline-block;
-  color: var(--bg-customer-box, #8e8f99);
+  color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
   /* font-family: Roboto;
-font-style: normal;
-font-weight: 400; */
+  font-style: normal; */
+  font-weight: 400;
   line-height: 1.17;
-  letter-spacing: 0.48px;
-  width: 100%;
+  letter-spacing: 0.04em;
 }
 
 .modal-form-label {
   display: block;
-  /* padding: 0;
-  margin: 0; */
   width: 100%;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+  color: var(--bg-customer-box);
 }
 
 .modal-submit-button {
@@ -1140,6 +1134,10 @@ font-weight: 400; */
   letter-spacing: 0.64px;
   border: 0;
   transition: color var(--trans-time-func);
+}
+
+.modal-checkbox-container {
+  margin-bottom: 24px;
 }
 
 .modal-list-input:focus {

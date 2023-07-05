@@ -771,13 +771,10 @@
           autocomplete="on"
           novalidate
         >
-          <div class="list modal-form-list">
-            <div class="modal-form-container">
-              <label
-                class="modal-form-label"
-                for="user-name"
-              >
-                <span class="modal-list-label">Name</span>
+          <div class="modal-form">
+            <label class="modal-form-label" for="user-name">
+              <span class="modal-list-label">Name</span>
+              <div class="modal-form-container">
                 <input
                   class="modal-list-input"
                   type="text"
@@ -794,14 +791,15 @@
                     href="./images/icons.svg#icon-name"
                   ></use>
                 </svg>
-              </label>
-            </div>
-            <div class="modal-form-container">
-              <label
-                class="modal-form-label"
-                for="user-phone"
-              >
-                <span class="modal-list-label">Phone</span>
+              </div>
+            </label>
+
+            <label
+              class="modal-form-label"
+              for="user-phone"
+            >
+              <span class="modal-list-label">Phone</span>
+              <div class="modal-form-container">
                 <input
                   class="modal-list-input"
                   type="tel"
@@ -818,14 +816,14 @@
                     href="./images/icons.svg#icon-phone"
                   ></use>
                 </svg>
-              </label>
-            </div>
-            <div class="modal-form-container">
-              <label
-                class="modal-form-label"
-                for="user-email"
-              >
-                <span class="modal-list-label">Email</span>
+              </div>
+            </label>
+            <label
+              class="modal-form-label"
+              for="user-email"
+            >
+              <span class="modal-list-label">Email</span>
+              <div class="modal-form-container">
                 <input
                   class="modal-list-input"
                   type="email"
@@ -842,34 +840,30 @@
                     href="./images/icons.svg#icon-email"
                   ></use>
                 </svg>
-              </label>
-            </div>
-            <div class="modal-form-container">
-              <label
-                class="modal-form-label"
-                for="modal-form-comment"
-              >
-                <span class="modal-list-label"
-                  >Comment</span
-                >
+              </div>
+            </label>
+            <label
+              class="modal-form-label"
+              for="user-comment"
+            >
+              <span class="modal-list-label">Comment</span>
+              <div class="modal-form-container">
                 <textarea
-                  name="modal-form-comment"
+                  name="user-comment"
                   class="modal-list-input-comment"
-                  placeholder="Your text"
-                  id="modal-form-comment"
+                  placeholder="Text input"
+                  id="user-comment"
                 ></textarea>
-              </label>
-            </div>
+              </div>
+            </label>
           </div>
-          <label
-            class="checkbox"
-            for="privacy-policy-check"
-          >
+          <div class="modal-checkbox-container">
             <input
               class="privacy-policy-check-input visually-hidden"
               type="checkbox"
-              name="privacy-policy-check"
-              id="privacy-policy-check"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
             />
             <svg
               class="privacy-policy-checkbox-icon"
@@ -885,18 +879,23 @@
                 href="./images/icons.svg#icon-check-label-full"
               ></use>
             </svg>
-            <span class="privacy-policy-text">
-              I accept the terms and conditions of the
-              <a class="privacy-policy-link" href="#"
-                >Privacy Policy</a
-              >
-            </span>
-          </label>
-          <button class="modal-submit-button" type="submit">
-            <span class="model-submit-button-text"
-              >Send</span
+            <label class="checkbox" for="user-privacy">
+              <span class="privacy-policy-text">
+                I accept the terms and conditions of the
+                <a class="privacy-policy-link" href="#"
+                  >Privacy Policy</a
+                >
+              </span>
+            </label>
+            <button
+              class="modal-submit-button"
+              type="submit"
             >
-          </button>
+              <span class="model-submit-button-text"
+                >Send</span
+              >
+            </button>
+          </div>
         </form>
       </div>
     </div>
